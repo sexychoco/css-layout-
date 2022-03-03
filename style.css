@@ -3,26 +3,27 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.father {
-  display: flex;
-  justify-content: space-around;
-  align-content: space-around;
-  height: 200vh;
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
 }
 
-.child {
-  width: 200px;
-  height: 200px;
-  flex-basis: 30%;
-  background-color: peru;
-  color: white;
-  font-size: 50;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header {
+  background-color: #2ecc71;
+  grid-column: span 4;
 }
-
-.child:nth-child(2) {
-  background: #000;
-  flex-grow: 1;
+.content {
+  background-color: #3498db;
+  grid-column: 1/4;
+  grid-row: 2/4;
+}
+.nav {
+  background-color: #8e44ad;
+  grid-row: 2/4;
+}
+.footer {
+  background-color: #f39c12;
+  grid-column: 1/-2;
 }
