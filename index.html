@@ -6,95 +6,122 @@
     <link rel="stylesheet" href="dist/css/reset.css" />
     <link rel="stylesheet" href="dist/css/styles.css" />
     <title>(S)CSS Masterclass</title>
+    <script
+      src="https://kit.fontawesome.com/f5fd1dcf34.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>Zoo</li>
-          <li>Contact</li>
-          <li>Team</li>
-          <li>Clients</li>
-        </ul>
-        <ul>
-          <li>Projects</li>
-          <li>Tous</li>
-        </ul>
-      </nav>
+      <div class="title">Timburton's Best Movies!</div>
     </header>
     <main>
-      <article>
-        <img src="https://source.unsplash.com/random/450x450" />
-        <div>
-          <h3>Moco Montpellier Contemporain</h3>
+      <section id="first_column">
+        <div class="poster">
+          <img
+            src="https://w.namu.la/s/a310e8a99e8b6ab149d011d703356430e6eb3d8a2c19383e8bbc743d2f32dc957c67c0709bde7eef40747f51a19e9c904ac160e533d8ea996edc4abea65460e1b12042c370db6332a4f13456bc7f7dbee095a2ca90b3cee3d43c9e975252c0d9b64434750920dc056bd24d14e1978f45"
+          />
         </div>
-      </article>
-      <article>
-        <img src="https://source.unsplash.com/random/450x451" />
-        <div>
-          <h3>Moco Montpellier Contemporain</h3>
+        <div class="watchBtn">
+          <button>watch now <i class="fa-solid fa-play"></i></button>
         </div>
-      </article>
-      <article>
-        <img src="https://source.unsplash.com/random/450x452" />
-        <div>
-          <h3>Moco Montpellier Contemporain</h3>
+        <div class="saveBtn">
+          <button>Save <i class="fa-solid fa-download"></i></button>
         </div>
-      </article>
-      <article>
-        <img src="https://source.unsplash.com/random/450x453" />
-        <div>
-          <h3>Moco Montpellier Contemporain</h3>
+      </section>
+      <section id="second_column">
+        <div class="movie_title">Corpse Bride(2005)</div>
+        <div class="movie_info">
+          <div class="ratings">
+            <span>★★★★☆</span>
+          </div>
+          <div class="running_time">
+            <span>1H 17M</span>
+          </div>
+          <div class="director_name">
+            <span>Tim Burton, Mike Johnson</span>
+          </div>
         </div>
-      </article>
-      <article>
-        <img src="https://source.unsplash.com/random/450x454" />
-        <div>
-          <h3>Moco Montpellier Contemporain</h3>
+        <div class="movie_description">
+          <p>
+            A fantastic story about a timid groom, Victor (Johnny Depp), who is
+            afraid of getting married. A day before the wedding, Victor keeps
+            making mistakes in rehearsal and runs out. While practicing alone in
+            the forest, he has a different experience of being dragged into the
+            underworld due to a misunderstanding by a ghost bride (Helena Bonham
+            Carter) after putting a ring on a finger bone that protrudes above
+            the ground.
+          </p>
         </div>
-      </article>
-      <article>
-        <img src="https://source.unsplash.com/random/450x455" />
-        <div>
-          <h3>Moco Montpellier Contemporain</h3>
+      </section>
+      <section id="third_column">
+        <div class="movie_scenes">
+          <div class="movie_scenes_item"><img src="img/1-1.jpg" /></div>
+          <div class="movie_scenes_item"><img src="img/1-2.jpg" /></div>
+          <div class="movie_scenes_item"><img src="img/1-3.jpg" /></div>
+          <div class="movie_scenes_item"><img src="img/1-4.jpg" /></div>
+          <div class="movie_scenes_item"><img src="img/1-5.jpg" /></div>
+          <div class="movie_scenes_item"><img src="img/1-6.jpg" /></div>
         </div>
-      </article>
-      <article>
-        <img src="https://source.unsplash.com/random/450x456" />
-        <div>
-          <h3>Moco Montpellier Contemporain</h3>
-        </div>
-      </article>
-      <article>
-        <img src="https://source.unsplash.com/random/450x457" />
-        <div>
-          <h3>Moco Montpellier Contemporain</h3>
-        </div>
-      </article>
-      <article>
-        <img src="https://source.unsplash.com/random/450x458" />
-        <div>
-          <h3>Moco Montpellier Contemporain</h3>
-        </div>
-      </article>
-      <article>
-        <img src="https://source.unsplash.com/random/450x459" />
-        <div>
-          <h3>Moco Montpellier Contemporain</h3>
-        </div>
-      </article>
-      <article>
-        <img src="https://source.unsplash.com/random/450x460" />
-        <div>
-          <h3>Moco Montpellier Contemporain</h3>
-        </div>
-      </article>
-      <article>
-        <img src="https://source.unsplash.com/random/450x461" />
-        <div>
-          <h3>Moco Montpellier Contemporain</h3>
-        </div>
-      </article>
+      </section>
     </main>
+    <footer>
+      <div class="recommend">
+        <span>Guess You Like!</span>
+        <div class="recommend_list">
+          <div class="recommend_item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/ko/0/06/%EC%B0%B0%EB%A6%AC%EC%99%80_%EC%B4%88%EC%BD%9C%EB%A6%BF_%EA%B3%B5%EC%9E%A5_%ED%8F%AC%EC%8A%A4%ED%84%B0.jpg"
+            />
+            <div class="recommend_item_info">
+              <span class="recommend_item_title"
+                >Charlie and the Chocolate Factory(2005)</span
+              >
+              <span class="recommend_item_ratings">★★★☆☆</span>
+            </div>
+          </div>
+          <div class="recommend_item">
+            <img
+              src="https://t1.daumcdn.net/cafefile/pds51/9_cafe_2007_12_13_18_07_4760f6616b7c0"
+            />
+            <div class="recommend_item_info">
+              <span class="recommend_item_title">Sweeney Todd(2007)</span>
+              <span class="recommend_item_ratings">★★★★★</span>
+            </div>
+          </div>
+          <div class="recommend_item">
+            <img
+              src="https://ww.namu.la/s/137dca12b56068540e984ee9830db45ab318acc879741089be04120e01152f374cd69ec7cf7a9b129df63e45265fff3374b72829fc1cd4e8c56e5857cabdf92e252c779c47255b4a441fa9dd2c0cf23237f384003b27b0affc928670fd34b1db5492a297effedaf4271a50ff6bc7caf2"
+            />
+            <div class="recommend_item_info">
+              <span class="recommend_item_title"
+                >The Nightmare Before Christmas(1993)</span
+              >
+              <span class="recommend_item_ratings">★★★★☆</span>
+            </div>
+          </div>
+          <div class="recommend_item">
+            <img
+              src="https://w.namu.la/s/b5ddc43933a3a1a5534034ca98fbbc290283a3d4032f07f42ed0b018fa75347511fdfa64b81d57ca7f609be7b547ffcda2602654593df1e577cac9e54944df4579afa16bac03ab9e7f6907891d2ed23c180eb16640b6a9fd9cc3db1b979099ccff9eb0f95c6efc30d216cb8ef837dcc4"
+            />
+            <div class="recommend_item_info">
+              <span class="recommend_item_title">Big Fish(2003)</span>
+              <span class="recommend_item_ratings">★★★★★</span>
+            </div>
+          </div>
+          <div class="recommend_item">
+            <img
+              src="https://ww.namu.la/s/94359581303a65a8a6a44d23efd1b8093b76b2e50be4ae0dee50ef8494d90ee56f16a1883d2e94d8730cd5301f0bc9215a547d5ab1ed8a05d8f8439ea5491f38d0030caf916d2848ef0e9f04c7daead0cc8cc705ff67e7bcd8959d400bb5bd436ea87dbeb5c956b4ca60352f514e3397"
+            />
+            <div class="recommend_item_info">
+              <span class="recommend_item_title"
+                >Alice Through the Looking Glass(2016)</span
+              >
+              <span class="recommend_item_ratings">★★★☆☆</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
