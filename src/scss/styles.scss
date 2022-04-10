@@ -34,7 +34,7 @@ header {
 
 main {
   display: grid;
-  grid-template-columns: 4fr 9fr 6fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
   section {
     display: flex;
     flex-direction: column;
@@ -140,7 +140,7 @@ main {
         padding-top: 20px;
         display: grid;
         grid-template-columns: repeat(10, minmax(30px, 150px));
-        grid-template-rows: repeat(9, 1fr);
+        grid-template-rows: repeat(12, 1fr);
         gap: 3px;
         img {
           width: 100%;
@@ -163,7 +163,13 @@ main {
           grid-area: 7/1/-1/5;
         }
         .sixth {
-          grid-area: 7/5/-1/-1;
+          grid-area: 7/5/10/-1;
+        }
+        .seventh {
+          grid-area: 10/1/-1/6;
+        }
+        .eighth {
+          grid-area: 10/6/-1/-1;
         }
       }
     }
