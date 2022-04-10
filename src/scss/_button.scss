@@ -1,8 +1,7 @@
 %button {
-  font-weight: 600;
-  font-size: 13px;
+  font-size: 10px;
   text-transform: uppercase;
-  background-color: #626262;
+  background-color: #28292e;
   border-style: none;
   padding: 20px 5px;
   width: 200px;
@@ -12,7 +11,13 @@
   align-items: center;
   justify-content: center;
   border-radius: 30px;
+  color: white;
   i {
     margin-left: 10px;
+  }
+  &:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s ease-in-out;
   }
 }

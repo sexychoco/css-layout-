@@ -1,7 +1,8 @@
 @import "reset.scss";
 @import "_variables.scss";
 @import "_button.scss";
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Rubik+Wet+Paint&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -25,20 +26,21 @@ header {
   padding: 30px 20px 10px 20px;
   background-color: black;
   .title {
-    font-size: 25px;
-    color: #c2000b;
-    font-family: "Libre Baskerville", serif;
+    font-size: 30px;
+    color: #a03223;
+    font-family: "Rubik Wet Paint", cursive;
   }
 }
 
 main {
   display: grid;
-  grid-template-columns: 3fr 9fr 6fr;
+  grid-template-columns: 4fr 9fr 6fr;
   section {
     display: flex;
     flex-direction: column;
   }
   #first_column {
+    padding: 20px;
     .poster {
       img {
         width: 100%;
@@ -67,6 +69,10 @@ main {
         text-align: center;
         justify-content: center;
         align-items: center;
+        &:hover {
+          color: #3398dc;
+          transition: 0.3s ease-in-out;
+        }
         span {
           font-size: 13px;
           margin-top: 10px;
@@ -80,9 +86,10 @@ main {
     display: flex;
     flex-direction: column;
     .movie_title {
-      padding: 15px;
-      font-size: 25px;
       border-bottom: 2px solid rgba(157, 153, 153, 0.5);
+      padding: 15px;
+      font-family: "PT Serif", serif;
+      font-size: 25px;
       font-weight: 600;
     }
     .movie_info {
@@ -95,11 +102,25 @@ main {
         margin-right: 20px;
       }
     }
+    .movie_meta_info {
+      display: flex;
+      padding: 20px;
+      font-size: 15px;
+      border-bottom: 2px solid rgba(157, 153, 153, 0.5);
+      span {
+        padding-right: 20px;
+      }
+    }
     .movie_description {
-      padding: 10px;
-      margin-top: 30px;
+      padding: 20px;
+      h3 {
+        font-family: "PT Serif", serif;
+        font-size: 27px;
+      }
       p {
-        line-height: normal;
+        font-size: 15px;
+        padding-top: 20px;
+        line-height: 150%;
       }
     }
   }
@@ -109,16 +130,18 @@ main {
     align-items: center;
     padding: 20px;
     .movie_scenes {
+      height: 100%;
       h3 {
-        font-size: 20px;
+        font-family: "PT Serif", serif;
+        font-size: 23px;
         color: white;
-        font-weight: 600;
       }
       .img_grid {
         padding-top: 20px;
         display: grid;
-        grid-template-columns: repeat(10, 1fr);
+        grid-template-columns: repeat(10, minmax(30px, 150px));
         grid-template-rows: repeat(9, 1fr);
+        gap: 3px;
         img {
           width: 100%;
           height: 100%;
@@ -156,6 +179,7 @@ footer {
     }
     .recommend_list {
       display: flex;
+      flex-wrap: wrap;
       padding-top: 30px;
       justify-content: space-around;
       .recommend_item {
